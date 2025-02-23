@@ -106,222 +106,73 @@ header {
     border-radius: 1rem;
 }
 
-/* Sección de información */
-.info {
-    width: 100%;
-    display: flex;
-    align-items: center;
+/* Estilos generales para la sección de cachorros */
+#cachorros {
     padding: 2rem;
-    flex-wrap: wrap;
-    gap: 2rem;
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.img_info {
-    flex: 1;
-    text-align: center;
-}
-
-.img_inform {
-    width: 80%;
-    max-width: 30rem;
-    border-radius: 30%;
-}
-
-.text_info {
-    flex: 1;
-    text-align: left;
-}
-
-/* Estilos para la Galería de Cachorros */
-.gallery {
-    padding: 2rem;
-    text-align: center;
     background-color: #f9f9f9;
+    text-align: center;
 }
 
-.gallery h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+#cachorros h2 {
+    font-size: 2.5rem;
     color: #333;
+    margin-bottom: 1.5rem;
 }
 
-.gallery-container {
+/* Contenedor de los cachorros */
+.cachorros-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
-.gallery-container img {
+/* Estilos para cada tarjeta de cachorro */
+.cachorro {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cachorro:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cachorro img {
     width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    height: 200px;
+    object-fit: cover;
 }
 
-.gallery-container img:hover {
-    transform: scale(1.05);
-}
-
-/* Estilos para Testimonios */
-.testimonials {
-    padding: 2rem;
-    background-color: #fff;
-    text-align: center;
-}
-
-.testimonials h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-
-.testimonial {
-    background-color: #f9f9f9;
-    padding: 1.5rem;
-    margin: 1rem auto;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 0.5rem;
-}
-
-.testimonial span {
-    font-size: 0.9rem;
-    color: #777;
-    font-style: italic;
-}
-
-/* Estilos para el Blog o Noticias */
-.blog {
-    padding: 2rem;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.blog h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-
-.blog-post {
-    background-color: #fff;
-    padding: 1.5rem;
-    margin: 1rem auto;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.blog-post h3 {
+.cachorro h3 {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
     color: #333;
+    margin: 1rem 0 0.5rem;
 }
 
-.blog-post p {
+.cachorro p {
     font-size: 1rem;
-    color: #555;
-    margin-bottom: 1rem;
+    color: #666;
+    margin: 0.5rem 0;
 }
 
-.blog-post a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.blog-post a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos para el Formulario de Contacto */
-.contact {
-    padding: 2rem;
-    background-color: #fff;
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-
-.contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.contact label {
-    display: block;
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-}
-
-.contact input,
-.contact textarea {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.contact textarea {
-    resize: vertical;
-    height: 150px;
-}
-
-.contact button {
-    background-color: #007bff;
-    color: #fff;
+.cachorro .boton {
+    display: inline-block;
+    margin: 1rem 0;
     padding: 0.75rem 1.5rem;
-    border: none;
+    background-color: #ff6f61;
+    color: #fff;
+    text-decoration: none;
     border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.contact button:hover {
-    background-color: #0056b3;
-}
-
-/* Estilos para el Mapa de Ubicación */
-.location {
-    padding: 2rem;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.location h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-
-.location iframe {
-    width: 100%;
-    max-width: 800px;
-    height: 450px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.cachorro .boton:hover {
+    background-color: #ff4a3d;
 }
 
 /* Estilos para el Footer */
@@ -479,5 +330,35 @@ footer p {
     /* Mapa de Ubicación */
     .location iframe {
         height: 200px;
+    }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .cachorros-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cachorro {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #cachorros h2 {
+        font-size: 2rem;
+    }
+
+    .cachorro h3 {
+        font-size: 1.25rem;
+    }
+
+    .cachorro p {
+        font-size: 0.9rem;
+    }
+
+    .cachorro .boton {
+        padding: 0.5rem 1rem;
     }
 }

@@ -106,222 +106,81 @@ header {
     border-radius: 1rem;
 }
 
-/* Sección de información */
-.info {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 2rem;
-    flex-wrap: wrap;
-    gap: 2rem;
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.img_info {
-    flex: 1;
-    text-align: center;
-}
-
-.img_inform {
-    width: 80%;
-    max-width: 30rem;
-    border-radius: 30%;
-}
-
-.text_info {
-    flex: 1;
-    text-align: left;
-}
-
-/* Estilos para la Galería de Cachorros */
+/* Estilos para la sección de galería de accesorios */
 .gallery {
-    padding: 2rem;
+    padding: 20px;
     text-align: center;
     background-color: #f9f9f9;
 }
 
 .gallery h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
     color: #333;
 }
 
 .gallery-container {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
     flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-.gallery-container img {
+.accesorio {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accesorio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.accesorio img {
     width: 100%;
-    max-width: 300px;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    margin-bottom: 15px;
 }
 
-.gallery-container img:hover {
-    transform: scale(1.05);
-}
-
-/* Estilos para Testimonios */
-.testimonials {
-    padding: 2rem;
-    background-color: #fff;
-    text-align: center;
-}
-
-.testimonials h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-
-.testimonial {
-    background-color: #f9f9f9;
-    padding: 1.5rem;
-    margin: 1rem auto;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 0.5rem;
-}
-
-.testimonial span {
-    font-size: 0.9rem;
-    color: #777;
-    font-style: italic;
-}
-
-/* Estilos para el Blog o Noticias */
-.blog {
-    padding: 2rem;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.blog h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-
-.blog-post {
-    background-color: #fff;
-    padding: 1.5rem;
-    margin: 1rem auto;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.blog-post h3 {
+.accesorio h3 {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 10px;
     color: #333;
 }
 
-.blog-post p {
+.accesorio p {
     font-size: 1rem;
-    color: #555;
-    margin-bottom: 1rem;
+    color: #666;
+    margin-bottom: 10px;
 }
 
-.blog-post a {
-    color: #007bff;
-    text-decoration: none;
+.accesorio .precio {
+    font-size: 1.25rem;
     font-weight: bold;
+    color: #28a745;
+    margin-bottom: 15px;
 }
 
-.blog-post a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos para el Formulario de Contacto */
-.contact {
-    padding: 2rem;
-    background-color: #fff;
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-
-.contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.contact label {
-    display: block;
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-}
-
-.contact input,
-.contact textarea {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.contact textarea {
-    resize: vertical;
-    height: 150px;
-}
-
-.contact button {
-    background-color: #007bff;
+.accesorio .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
     color: #fff;
-    padding: 0.75rem 1.5rem;
-    border: none;
+    text-decoration: none;
     border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.contact button:hover {
-    background-color: #0056b3;
-}
-
-/* Estilos para el Mapa de Ubicación */
-.location {
-    padding: 2rem;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.location h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-
-.location iframe {
-    width: 100%;
-    max-width: 800px;
-    height: 450px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.accesorio .boton:hover {
+    background-color: #218838;
 }
 
 /* Estilos para el Footer */
@@ -479,5 +338,85 @@ footer p {
     /* Mapa de Ubicación */
     .location iframe {
         height: 200px;
+    }
+}
+
+/* Media Queries para hacer la galería responsiva */
+
+/* Pantallas pequeñas (móviles, hasta 600px) */
+@media (max-width: 600px) {
+    .gallery h2 {
+        font-size: 2rem; /* Título más pequeño */
+    }
+
+    .accesorio {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin-bottom: 20px; /* Espacio entre accesorios */
+    }
+
+    .accesorio img {
+        height: 150px; /* Imágenes más pequeñas */
+    }
+
+    .accesorio h3 {
+        font-size: 1.25rem; /* Título más pequeño */
+    }
+
+    .accesorio p {
+        font-size: 0.9rem; /* Texto más pequeño */
+    }
+
+    .accesorio .precio {
+        font-size: 1.1rem; /* Precio más pequeño */
+    }
+
+    .accesorio .boton {
+        padding: 8px 16px; /* Botón más pequeño */
+    }
+}
+
+/* Pantallas medianas (tablets, de 601px a 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .accesorio {
+        width: calc(50% - 20px); /* Dos accesorios por fila */
+    }
+
+    .accesorio img {
+        height: 180px; /* Ajuste de altura de imagen */
+    }
+
+    .accesorio h3 {
+        font-size: 1.4rem; /* Título ligeramente más pequeño */
+    }
+
+    .accesorio p {
+        font-size: 0.95rem; /* Texto ligeramente más pequeño */
+    }
+
+    .accesorio .precio {
+        font-size: 1.2rem; /* Precio ligeramente más pequeño */
+    }
+}
+
+/* Pantallas grandes (escritorios, más de 900px) */
+@media (min-width: 901px) {
+    .accesorio {
+        width: calc(33.33% - 20px); /* Tres accesorios por fila */
+    }
+
+    .accesorio img {
+        height: 200px; /* Altura original de la imagen */
+    }
+
+    .accesorio h3 {
+        font-size: 1.5rem; /* Título original */
+    }
+
+    .accesorio p {
+        font-size: 1rem; /* Texto original */
+    }
+
+    .accesorio .precio {
+        font-size: 1.25rem; /* Precio original */
     }
 }
